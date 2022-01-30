@@ -37,7 +37,7 @@ class DocumentDetailsViewController: UIViewController {
 
     private func createISBNsString()->String{
         guard let data = data , let isbns = data.isbn else{ return "" }
-        let isbnsSeperated = isbns.joined(separator: "\r\n")
+        let isbnsSeperated = isbns.prefix(5).joined(separator: "\r\n")
         return isbnsSeperated
     }
     
