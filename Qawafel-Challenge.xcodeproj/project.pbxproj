@@ -29,6 +29,10 @@
 		D90EA38327A6E04D003D86D8 /* DocumentListNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA38227A6E04D003D86D8 /* DocumentListNetworkRouter.swift */; };
 		D90EA38627A6E0FC003D86D8 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA38527A6E0FC003D86D8 /* APIConstant.swift */; };
 		D90EA38927A6E2AE003D86D8 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA38827A6E2AE003D86D8 /* Codable+Extension.swift */; };
+		D90EA38C27A6F879003D86D8 /* DocumentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA38B27A6F879003D86D8 /* DocumentListRouter.swift */; };
+		D90EA38F27A6F97D003D86D8 /* DocumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA38E27A6F97D003D86D8 /* DocumentListViewController.swift */; };
+		D90EA39227A6F9C4003D86D8 /* DocumentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA39127A6F9C4003D86D8 /* DocumentCellViewModel.swift */; };
+		D90EA39427A6FA45003D86D8 /* DocumentListPresenterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA39327A6FA45003D86D8 /* DocumentListPresenterMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		D90EA38227A6E04D003D86D8 /* DocumentListNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListNetworkRouter.swift; sourceTree = "<group>"; };
 		D90EA38527A6E0FC003D86D8 /* APIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		D90EA38827A6E2AE003D86D8 /* Codable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
+		D90EA38B27A6F879003D86D8 /* DocumentListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListRouter.swift; sourceTree = "<group>"; };
+		D90EA38E27A6F97D003D86D8 /* DocumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListViewController.swift; sourceTree = "<group>"; };
+		D90EA39127A6F9C4003D86D8 /* DocumentCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCellViewModel.swift; sourceTree = "<group>"; };
+		D90EA39327A6FA45003D86D8 /* DocumentListPresenterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListPresenterMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +184,8 @@
 		D90EA36327A6D26E003D86D8 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				D90EA38D27A6F95D003D86D8 /* View */,
+				D90EA38A27A6F856003D86D8 /* Router */,
 				D90EA36A27A6D339003D86D8 /* Entity */,
 				D90EA36727A6D2F5003D86D8 /* Presenter */,
 				D90EA36427A6D279003D86D8 /* Interactor */,
@@ -202,6 +212,7 @@
 		D90EA36A27A6D339003D86D8 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				D90EA39027A6F9B2003D86D8 /* UI */,
 				D90EA38127A6DF01003D86D8 /* Router */,
 				D90EA37E27A6DE30003D86D8 /* Request */,
 				D90EA37D27A6DE24003D86D8 /* Error */,
@@ -284,6 +295,31 @@
 				D90EA38827A6E2AE003D86D8 /* Codable+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D90EA38A27A6F856003D86D8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA38B27A6F879003D86D8 /* DocumentListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D90EA38D27A6F95D003D86D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA38E27A6F97D003D86D8 /* DocumentListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D90EA39027A6F9B2003D86D8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA39127A6F9C4003D86D8 /* DocumentCellViewModel.swift */,
+				D90EA39327A6FA45003D86D8 /* DocumentListPresenterMapper.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,7 +453,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90EA39427A6FA45003D86D8 /* DocumentListPresenterMapper.swift in Sources */,
 				D90EA33327A6CFEB003D86D8 /* ViewController.swift in Sources */,
+				D90EA38C27A6F879003D86D8 /* DocumentListRouter.swift in Sources */,
 				D90EA36927A6D304003D86D8 /* DocumentListPresenter.swift in Sources */,
 				D90EA37827A6D4A0003D86D8 /* NetworkManager.swift in Sources */,
 				D90EA38627A6E0FC003D86D8 /* APIConstant.swift in Sources */,
@@ -428,6 +466,8 @@
 				D90EA38327A6E04D003D86D8 /* DocumentListNetworkRouter.swift in Sources */,
 				D90EA37A27A6D4A0003D86D8 /* NetworkRoutering.swift in Sources */,
 				D90EA36E27A6D373003D86D8 /* DocumentListFetchError.swift in Sources */,
+				D90EA38F27A6F97D003D86D8 /* DocumentListViewController.swift in Sources */,
+				D90EA39227A6F9C4003D86D8 /* DocumentCellViewModel.swift in Sources */,
 				D90EA37927A6D4A0003D86D8 /* HTTPHelpers.swift in Sources */,
 				D90EA32F27A6CFEB003D86D8 /* AppDelegate.swift in Sources */,
 				D90EA33127A6CFEB003D86D8 /* SceneDelegate.swift in Sources */,
