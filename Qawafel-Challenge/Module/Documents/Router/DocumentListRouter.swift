@@ -12,16 +12,24 @@ protocol DocumentListRouterContract{
     func showDocumentDetails(from document: Doc)
 }
 
-//struct DocumentListRouter: DocumentListRouterContract{
-//    
-//    var navigationController: UINavigationController?
-//    
-//    init(navigationController: UINavigationController?){
-//        self.navigationController = navigationController
-//    }
-//    
-//    func showDocumentDetails(from document: Doc) {
-//        
-//    }
-//    
-//}
+struct DocumentListRouter: DocumentListRouterContract{
+    
+    var viewController: UIViewController?
+    
+    init(viewController: UIViewController?){
+        self.viewController = viewController
+    }
+    
+    func showDocumentDetails(from document: Doc) {
+        
+    }
+    
+    static func createModule()->UIViewController{
+        let storyboard = UIStoryboard.init(name: StoryboardName.Document.rawValue, bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerID.DocumentListViewController.rawValue) as? DocumentListViewController else{ return UIViewController() }
+        let configurator = DocumentListConfigurator()
+        let configuredView = configurator.configure(with: viewController)
+        return configuredView
+    }
+    
+}

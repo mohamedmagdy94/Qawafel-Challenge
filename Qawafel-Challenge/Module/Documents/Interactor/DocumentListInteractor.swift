@@ -10,6 +10,7 @@ import Foundation
 protocol DocumentListInteractorContract{
     func getDocuemntList(from query: String)
     func getDocument(from index: Int)->Result<Doc,DocumentListFetchError>
+    func setPresenter(with presenter: DocumentListPresenterOutputContract)
 }
 
 class DocumentListInteractor: DocumentListInteractorContract{
@@ -18,8 +19,12 @@ class DocumentListInteractor: DocumentListInteractorContract{
     private var presenter: DocumentListPresenterOutputContract?
     private var response: DocumentListResponse?
     
-    init(reprository: DocumentListReprositoryContract, presenter: DocumentListPresenterOutputContract) {
+    init(reprository: DocumentListReprositoryContract, presenter: DocumentListPresenterOutputContract?) {
         self.reprository = reprository
+        self.presenter = presenter
+    }
+    
+    func setPresenter(with presenter: DocumentListPresenterOutputContract) {
         self.presenter = presenter
     }
     
