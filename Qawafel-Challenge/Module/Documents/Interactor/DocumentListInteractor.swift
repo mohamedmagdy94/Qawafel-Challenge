@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DocumentListInteractorContract{
+protocol DocumentListInteractorContract: AnyObject{
     func getDocuemntList(from query: String)
     func getDocument(from index: Int)->Result<Doc,DocumentListFetchError>
     func setPresenter(with presenter: DocumentListPresenterOutputContract)
@@ -16,7 +16,7 @@ protocol DocumentListInteractorContract{
 class DocumentListInteractor: DocumentListInteractorContract{
 
     private var reprository: DocumentListReprositoryContract
-    private var presenter: DocumentListPresenterOutputContract?
+    private weak var presenter: DocumentListPresenterOutputContract?
     private var response: DocumentListResponse?
     
     init(reprository: DocumentListReprositoryContract, presenter: DocumentListPresenterOutputContract?) {

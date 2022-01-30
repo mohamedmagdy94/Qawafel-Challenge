@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol DocumentListViewContract{
+protocol DocumentListViewContract: AnyObject{
     func toggleLoading(state: Bool)
     func showErrorMessage(message: String)
     func refreshList()

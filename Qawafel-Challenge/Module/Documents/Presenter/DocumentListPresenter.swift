@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol DocumentListPresenterOutputContract{
+protocol DocumentListPresenterOutputContract: AnyObject{
     func onDocumentListFetched(with result: Result<DocumentListResponse,DocumentListFetchError>)
 }
 
-protocol DocumentListPresenterInputContract{
+protocol DocumentListPresenterInputContract: AnyObject{
     var cells: [DocumentCellViewModel]{get}
     func onSearchRequested(query: String)
     func onDocumentSelected(with index: IndexPath)
@@ -22,7 +22,7 @@ typealias DocumentListPresenterContract = DocumentListPresenterOutputContract & 
 class DocumentListPresenter: DocumentListPresenterContract{
     
     var interactor: DocumentListInteractorContract?
-    var view: DocumentListViewContract?
+    weak var view: DocumentListViewContract?
     var router: DocumentListRouterContract?
     var cells: [DocumentCellViewModel]
     
