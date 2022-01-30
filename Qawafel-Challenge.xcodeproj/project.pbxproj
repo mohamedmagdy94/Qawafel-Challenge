@@ -40,6 +40,9 @@
 		D90EA3A327A71FEE003D86D8 /* ViewControllerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA3A227A71FEE003D86D8 /* ViewControllerID.swift */; };
 		D90EA3A627A720EA003D86D8 /* DocumentListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA3A527A720EA003D86D8 /* DocumentListConfigurator.swift */; };
 		D90EA3A827A722B9003D86D8 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA3A727A722B9003D86D8 /* AppRouter.swift */; };
+		D90EA3AC27A72BDE003D86D8 /* DocumentListMockReprository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA3AB27A72BDE003D86D8 /* DocumentListMockReprository.swift */; };
+		D90EA3B227A72FE0003D86D8 /* QawafelPresentationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA3B127A72FE0003D86D8 /* QawafelPresentationTesting.swift */; };
+		D90EA3B327A73132003D86D8 /* MockDocumentListResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D90EA3AA27A72BB7003D86D8 /* MockDocumentListResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,9 @@
 		D90EA3A227A71FEE003D86D8 /* ViewControllerID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerID.swift; sourceTree = "<group>"; };
 		D90EA3A527A720EA003D86D8 /* DocumentListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListConfigurator.swift; sourceTree = "<group>"; };
 		D90EA3A727A722B9003D86D8 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		D90EA3AA27A72BB7003D86D8 /* MockDocumentListResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockDocumentListResponse.json; sourceTree = "<group>"; };
+		D90EA3AB27A72BDE003D86D8 /* DocumentListMockReprository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListMockReprository.swift; sourceTree = "<group>"; };
+		D90EA3B127A72FE0003D86D8 /* QawafelPresentationTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QawafelPresentationTesting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				D90EA34827A6CFEE003D86D8 /* Qawafel_ChallengeTests.swift */,
+				D90EA3B127A72FE0003D86D8 /* QawafelPresentationTesting.swift */,
 			);
 			path = "Qawafel-ChallengeTests";
 			sourceTree = "<group>";
@@ -227,6 +234,7 @@
 		D90EA36A27A6D339003D86D8 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				D90EA3A927A72B96003D86D8 /* Mock */,
 				D90EA39027A6F9B2003D86D8 /* UI */,
 				D90EA38127A6DF01003D86D8 /* Router */,
 				D90EA37E27A6DE30003D86D8 /* Request */,
@@ -241,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				D90EA37127A6D413003D86D8 /* DocumentListReprository.swift */,
+				D90EA3AB27A72BDE003D86D8 /* DocumentListMockReprository.swift */,
 			);
 			path = Reprository;
 			sourceTree = "<group>";
@@ -367,6 +376,14 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		D90EA3A927A72B96003D86D8 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA3AA27A72BB7003D86D8 /* MockDocumentListResponse.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -472,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90EA39F27A70967003D86D8 /* DocumentTableViewCell.xib in Resources */,
+				D90EA3B327A73132003D86D8 /* MockDocumentListResponse.json in Resources */,
 				D90EA33E27A6CFEE003D86D8 /* LaunchScreen.storyboard in Resources */,
 				D90EA39827A70879003D86D8 /* Document.storyboard in Resources */,
 				D90EA33B27A6CFEE003D86D8 /* Assets.xcassets in Resources */,
@@ -523,6 +541,7 @@
 				D90EA32F27A6CFEB003D86D8 /* AppDelegate.swift in Sources */,
 				D90EA33127A6CFEB003D86D8 /* SceneDelegate.swift in Sources */,
 				D90EA36C27A6D368003D86D8 /* DocumentListResponse.swift in Sources */,
+				D90EA3AC27A72BDE003D86D8 /* DocumentListMockReprository.swift in Sources */,
 				D90EA38027A6DE42003D86D8 /* DocumentListRequest.swift in Sources */,
 				D90EA3A627A720EA003D86D8 /* DocumentListConfigurator.swift in Sources */,
 			);
@@ -532,6 +551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90EA3B227A72FE0003D86D8 /* QawafelPresentationTesting.swift in Sources */,
 				D90EA34927A6CFEE003D86D8 /* Qawafel_ChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
