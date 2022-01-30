@@ -33,6 +33,9 @@
 		D90EA38F27A6F97D003D86D8 /* DocumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA38E27A6F97D003D86D8 /* DocumentListViewController.swift */; };
 		D90EA39227A6F9C4003D86D8 /* DocumentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA39127A6F9C4003D86D8 /* DocumentCellViewModel.swift */; };
 		D90EA39427A6FA45003D86D8 /* DocumentListPresenterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA39327A6FA45003D86D8 /* DocumentListPresenterMapper.swift */; };
+		D90EA39827A70879003D86D8 /* Document.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90EA39727A70879003D86D8 /* Document.storyboard */; };
+		D90EA39E27A70967003D86D8 /* DocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA39C27A70967003D86D8 /* DocumentTableViewCell.swift */; };
+		D90EA39F27A70967003D86D8 /* DocumentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90EA39D27A70967003D86D8 /* DocumentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		D90EA38E27A6F97D003D86D8 /* DocumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListViewController.swift; sourceTree = "<group>"; };
 		D90EA39127A6F9C4003D86D8 /* DocumentCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCellViewModel.swift; sourceTree = "<group>"; };
 		D90EA39327A6FA45003D86D8 /* DocumentListPresenterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListPresenterMapper.swift; sourceTree = "<group>"; };
+		D90EA39727A70879003D86D8 /* Document.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Document.storyboard; sourceTree = "<group>"; };
+		D90EA39C27A70967003D86D8 /* DocumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableViewCell.swift; sourceTree = "<group>"; };
+		D90EA39D27A70967003D86D8 /* DocumentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,7 +314,8 @@
 		D90EA38D27A6F95D003D86D8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D90EA38E27A6F97D003D86D8 /* DocumentListViewController.swift */,
+				D90EA39927A70880003D86D8 /* Controller */,
+				D90EA39627A70860003D86D8 /* UI */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,6 +327,24 @@
 				D90EA39327A6FA45003D86D8 /* DocumentListPresenterMapper.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		D90EA39627A70860003D86D8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA39727A70879003D86D8 /* Document.storyboard */,
+				D90EA39D27A70967003D86D8 /* DocumentTableViewCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D90EA39927A70880003D86D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA38E27A6F97D003D86D8 /* DocumentListViewController.swift */,
+				D90EA39C27A70967003D86D8 /* DocumentTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,7 +451,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90EA39F27A70967003D86D8 /* DocumentTableViewCell.xib in Resources */,
 				D90EA33E27A6CFEE003D86D8 /* LaunchScreen.storyboard in Resources */,
+				D90EA39827A70879003D86D8 /* Document.storyboard in Resources */,
 				D90EA33B27A6CFEE003D86D8 /* Assets.xcassets in Resources */,
 				D90EA33627A6CFEB003D86D8 /* Main.storyboard in Resources */,
 			);
@@ -466,6 +493,7 @@
 				D90EA38327A6E04D003D86D8 /* DocumentListNetworkRouter.swift in Sources */,
 				D90EA37A27A6D4A0003D86D8 /* NetworkRoutering.swift in Sources */,
 				D90EA36E27A6D373003D86D8 /* DocumentListFetchError.swift in Sources */,
+				D90EA39E27A70967003D86D8 /* DocumentTableViewCell.swift in Sources */,
 				D90EA38F27A6F97D003D86D8 /* DocumentListViewController.swift in Sources */,
 				D90EA39227A6F9C4003D86D8 /* DocumentCellViewModel.swift in Sources */,
 				D90EA37927A6D4A0003D86D8 /* HTTPHelpers.swift in Sources */,

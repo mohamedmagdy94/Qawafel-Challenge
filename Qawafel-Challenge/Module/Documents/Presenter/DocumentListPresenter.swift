@@ -34,6 +34,7 @@ class DocumentListPresenter: DocumentListPresenterContract{
     }
     
     func onDocumentListFetched(with result: Result<DocumentListResponse, DocumentListFetchError>) {
+        view?.toggleLoading(state: false)
         switch result{
         case .success(let result):
             handleDocuments(with: result)
@@ -52,6 +53,7 @@ class DocumentListPresenter: DocumentListPresenterContract{
     }
     
     func onSearchRequested(query: String) {
+        view?.toggleLoading(state: true)
         interactor?.getDocuemntList(from: query)
     }
     
