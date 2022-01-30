@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D90EA32F27A6CFEB003D86D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA32E27A6CFEB003D86D8 /* AppDelegate.swift */; };
+		D90EA33127A6CFEB003D86D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA33027A6CFEB003D86D8 /* SceneDelegate.swift */; };
+		D90EA33327A6CFEB003D86D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA33227A6CFEB003D86D8 /* ViewController.swift */; };
+		D90EA33627A6CFEB003D86D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90EA33427A6CFEB003D86D8 /* Main.storyboard */; };
+		D90EA33927A6CFEB003D86D8 /* Qawafel_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D90EA33727A6CFEB003D86D8 /* Qawafel_Challenge.xcdatamodeld */; };
+		D90EA33B27A6CFEE003D86D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90EA33A27A6CFEE003D86D8 /* Assets.xcassets */; };
+		D90EA33E27A6CFEE003D86D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90EA33C27A6CFEE003D86D8 /* LaunchScreen.storyboard */; };
+		D90EA34927A6CFEE003D86D8 /* Qawafel_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA34827A6CFEE003D86D8 /* Qawafel_ChallengeTests.swift */; };
+		D90EA35327A6CFEE003D86D8 /* Qawafel_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA35227A6CFEE003D86D8 /* Qawafel_ChallengeUITests.swift */; };
+		D90EA35527A6CFEE003D86D8 /* Qawafel_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA35427A6CFEE003D86D8 /* Qawafel_ChallengeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D90EA34527A6CFEE003D86D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90EA32327A6CFEB003D86D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90EA32A27A6CFEB003D86D8;
+			remoteInfo = "Qawafel-Challenge";
+		};
+		D90EA34F27A6CFEE003D86D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90EA32327A6CFEB003D86D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90EA32A27A6CFEB003D86D8;
+			remoteInfo = "Qawafel-Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D90EA32B27A6CFEB003D86D8 /* Qawafel-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qawafel-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90EA32E27A6CFEB003D86D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D90EA33027A6CFEB003D86D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D90EA33227A6CFEB003D86D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D90EA33527A6CFEB003D86D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D90EA33827A6CFEB003D86D8 /* Qawafel_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Qawafel_Challenge.xcdatamodel; sourceTree = "<group>"; };
+		D90EA33A27A6CFEE003D86D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D90EA33D27A6CFEE003D86D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D90EA33F27A6CFEE003D86D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90EA34427A6CFEE003D86D8 /* Qawafel-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qawafel-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90EA34827A6CFEE003D86D8 /* Qawafel_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qawafel_ChallengeTests.swift; sourceTree = "<group>"; };
+		D90EA34E27A6CFEE003D86D8 /* Qawafel-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qawafel-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90EA35227A6CFEE003D86D8 /* Qawafel_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qawafel_ChallengeUITests.swift; sourceTree = "<group>"; };
+		D90EA35427A6CFEE003D86D8 /* Qawafel_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qawafel_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D90EA32827A6CFEB003D86D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90EA34127A6CFEE003D86D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90EA34B27A6CFEE003D86D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D90EA32227A6CFEB003D86D8 = {
+			isa = PBXGroup;
+			children = (
+				D90EA32D27A6CFEB003D86D8 /* Qawafel-Challenge */,
+				D90EA34727A6CFEE003D86D8 /* Qawafel-ChallengeTests */,
+				D90EA35127A6CFEE003D86D8 /* Qawafel-ChallengeUITests */,
+				D90EA32C27A6CFEB003D86D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D90EA32C27A6CFEB003D86D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA32B27A6CFEB003D86D8 /* Qawafel-Challenge.app */,
+				D90EA34427A6CFEE003D86D8 /* Qawafel-ChallengeTests.xctest */,
+				D90EA34E27A6CFEE003D86D8 /* Qawafel-ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D90EA32D27A6CFEB003D86D8 /* Qawafel-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA32E27A6CFEB003D86D8 /* AppDelegate.swift */,
+				D90EA33027A6CFEB003D86D8 /* SceneDelegate.swift */,
+				D90EA33227A6CFEB003D86D8 /* ViewController.swift */,
+				D90EA33427A6CFEB003D86D8 /* Main.storyboard */,
+				D90EA33A27A6CFEE003D86D8 /* Assets.xcassets */,
+				D90EA33C27A6CFEE003D86D8 /* LaunchScreen.storyboard */,
+				D90EA33F27A6CFEE003D86D8 /* Info.plist */,
+				D90EA33727A6CFEB003D86D8 /* Qawafel_Challenge.xcdatamodeld */,
+			);
+			path = "Qawafel-Challenge";
+			sourceTree = "<group>";
+		};
+		D90EA34727A6CFEE003D86D8 /* Qawafel-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA34827A6CFEE003D86D8 /* Qawafel_ChallengeTests.swift */,
+			);
+			path = "Qawafel-ChallengeTests";
+			sourceTree = "<group>";
+		};
+		D90EA35127A6CFEE003D86D8 /* Qawafel-ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA35227A6CFEE003D86D8 /* Qawafel_ChallengeUITests.swift */,
+				D90EA35427A6CFEE003D86D8 /* Qawafel_ChallengeUITestsLaunchTests.swift */,
+			);
+			path = "Qawafel-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D90EA32A27A6CFEB003D86D8 /* Qawafel-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90EA35827A6CFEE003D86D8 /* Build configuration list for PBXNativeTarget "Qawafel-Challenge" */;
+			buildPhases = (
+				D90EA32727A6CFEB003D86D8 /* Sources */,
+				D90EA32827A6CFEB003D86D8 /* Frameworks */,
+				D90EA32927A6CFEB003D86D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Qawafel-Challenge";
+			productName = "Qawafel-Challenge";
+			productReference = D90EA32B27A6CFEB003D86D8 /* Qawafel-Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D90EA34327A6CFEE003D86D8 /* Qawafel-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90EA35B27A6CFEE003D86D8 /* Build configuration list for PBXNativeTarget "Qawafel-ChallengeTests" */;
+			buildPhases = (
+				D90EA34027A6CFEE003D86D8 /* Sources */,
+				D90EA34127A6CFEE003D86D8 /* Frameworks */,
+				D90EA34227A6CFEE003D86D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D90EA34627A6CFEE003D86D8 /* PBXTargetDependency */,
+			);
+			name = "Qawafel-ChallengeTests";
+			productName = "Qawafel-ChallengeTests";
+			productReference = D90EA34427A6CFEE003D86D8 /* Qawafel-ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D90EA34D27A6CFEE003D86D8 /* Qawafel-ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90EA35E27A6CFEE003D86D8 /* Build configuration list for PBXNativeTarget "Qawafel-ChallengeUITests" */;
+			buildPhases = (
+				D90EA34A27A6CFEE003D86D8 /* Sources */,
+				D90EA34B27A6CFEE003D86D8 /* Frameworks */,
+				D90EA34C27A6CFEE003D86D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D90EA35027A6CFEE003D86D8 /* PBXTargetDependency */,
+			);
+			name = "Qawafel-ChallengeUITests";
+			productName = "Qawafel-ChallengeUITests";
+			productReference = D90EA34E27A6CFEE003D86D8 /* Qawafel-ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D90EA32327A6CFEB003D86D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					D90EA32A27A6CFEB003D86D8 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					D90EA34327A6CFEE003D86D8 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = D90EA32A27A6CFEB003D86D8;
+					};
+					D90EA34D27A6CFEE003D86D8 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = D90EA32A27A6CFEB003D86D8;
+					};
+				};
+			};
+			buildConfigurationList = D90EA32627A6CFEB003D86D8 /* Build configuration list for PBXProject "Qawafel-Challenge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D90EA32227A6CFEB003D86D8;
+			productRefGroup = D90EA32C27A6CFEB003D86D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D90EA32A27A6CFEB003D86D8 /* Qawafel-Challenge */,
+				D90EA34327A6CFEE003D86D8 /* Qawafel-ChallengeTests */,
+				D90EA34D27A6CFEE003D86D8 /* Qawafel-ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D90EA32927A6CFEB003D86D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90EA33E27A6CFEE003D86D8 /* LaunchScreen.storyboard in Resources */,
+				D90EA33B27A6CFEE003D86D8 /* Assets.xcassets in Resources */,
+				D90EA33627A6CFEB003D86D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90EA34227A6CFEE003D86D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90EA34C27A6CFEE003D86D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D90EA32727A6CFEB003D86D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90EA33327A6CFEB003D86D8 /* ViewController.swift in Sources */,
+				D90EA33927A6CFEB003D86D8 /* Qawafel_Challenge.xcdatamodeld in Sources */,
+				D90EA32F27A6CFEB003D86D8 /* AppDelegate.swift in Sources */,
+				D90EA33127A6CFEB003D86D8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90EA34027A6CFEE003D86D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90EA34927A6CFEE003D86D8 /* Qawafel_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90EA34A27A6CFEE003D86D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90EA35527A6CFEE003D86D8 /* Qawafel_ChallengeUITestsLaunchTests.swift in Sources */,
+				D90EA35327A6CFEE003D86D8 /* Qawafel_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D90EA34627A6CFEE003D86D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D90EA32A27A6CFEB003D86D8 /* Qawafel-Challenge */;
+			targetProxy = D90EA34527A6CFEE003D86D8 /* PBXContainerItemProxy */;
+		};
+		D90EA35027A6CFEE003D86D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D90EA32A27A6CFEB003D86D8 /* Qawafel-Challenge */;
+			targetProxy = D90EA34F27A6CFEE003D86D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D90EA33427A6CFEB003D86D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90EA33527A6CFEB003D86D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D90EA33C27A6CFEE003D86D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90EA33D27A6CFEE003D86D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D90EA35627A6CFEE003D86D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D90EA35727A6CFEE003D86D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D90EA35927A6CFEE003D86D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Qawafel-Challenge/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Qawafel.Qawafel-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D90EA35A27A6CFEE003D86D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Qawafel-Challenge/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Qawafel.Qawafel-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D90EA35C27A6CFEE003D86D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Qawafel.Qawafel-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qawafel-Challenge.app/Qawafel-Challenge";
+			};
+			name = Debug;
+		};
+		D90EA35D27A6CFEE003D86D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Qawafel.Qawafel-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qawafel-Challenge.app/Qawafel-Challenge";
+			};
+			name = Release;
+		};
+		D90EA35F27A6CFEE003D86D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Qawafel.Qawafel-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Qawafel-Challenge";
+			};
+			name = Debug;
+		};
+		D90EA36027A6CFEE003D86D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Qawafel.Qawafel-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Qawafel-Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D90EA32627A6CFEB003D86D8 /* Build configuration list for PBXProject "Qawafel-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90EA35627A6CFEE003D86D8 /* Debug */,
+				D90EA35727A6CFEE003D86D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90EA35827A6CFEE003D86D8 /* Build configuration list for PBXNativeTarget "Qawafel-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90EA35927A6CFEE003D86D8 /* Debug */,
+				D90EA35A27A6CFEE003D86D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90EA35B27A6CFEE003D86D8 /* Build configuration list for PBXNativeTarget "Qawafel-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90EA35C27A6CFEE003D86D8 /* Debug */,
+				D90EA35D27A6CFEE003D86D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90EA35E27A6CFEE003D86D8 /* Build configuration list for PBXNativeTarget "Qawafel-ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90EA35F27A6CFEE003D86D8 /* Debug */,
+				D90EA36027A6CFEE003D86D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D90EA33727A6CFEB003D86D8 /* Qawafel_Challenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D90EA33827A6CFEB003D86D8 /* Qawafel_Challenge.xcdatamodel */,
+			);
+			currentVersion = D90EA33827A6CFEB003D86D8 /* Qawafel_Challenge.xcdatamodel */;
+			path = Qawafel_Challenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D90EA32327A6CFEB003D86D8 /* Project object */;
+}
