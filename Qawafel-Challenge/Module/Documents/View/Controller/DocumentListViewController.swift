@@ -17,15 +17,28 @@ class DocumentListViewController: UIViewController {
     
     @IBOutlet private weak var documentsTableView: UITableView!
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet private weak var searchBar: UISearchBar!
     private var presenter: DocumentListPresenterInputContract?
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+    }
+    
+    private func setup(){
+        loadingIndicator.isHidden = true
+        documentsTableView.register(UINib(nibName: DocumentTableViewCell.IDENTIFIER, bundle: nil), forCellReuseIdentifier: DocumentTableViewCell.IDENTIFIER)
+        documentsTableView.delegate = self
+        documentsTableView.dataSource = self
     }
     
     func setPresenter(presenter: DocumentListPresenterInputContract){
         self.presenter = presenter
+    }
+    
+    @IBAction func onSearchButtonPressed(_ sender: Any) {
+        presenter?.onSearchRequested(query: searchBar.text ?? "")
     }
     
 }

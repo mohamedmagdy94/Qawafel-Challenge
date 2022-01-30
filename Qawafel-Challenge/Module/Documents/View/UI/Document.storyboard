@@ -16,38 +16,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PsK-Hv-GzJ">
-                                <rect key="frame" x="24" y="68" width="366" height="770"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DocumentTableViewCell" id="Ghd-Dd-qXT" customClass="DocumentTableViewCell" customModule="Qawafel_Challenge" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="366" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ghd-Dd-qXT" id="jTb-5S-mnV">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Edy-ll-TuK">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Uof-sQ-wVn">
+                                <rect key="frame" x="24" y="44" width="366" height="794"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lgG-nc-XcR">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="75"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PsK-Hv-GzJ">
+                                        <rect key="frame" x="0.0" y="91" width="366" height="656"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DocumentTableViewCell" id="Ghd-Dd-qXT" customClass="DocumentTableViewCell" customModule="Qawafel_Challenge" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.5" width="366" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ghd-Dd-qXT" id="jTb-5S-mnV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7r-3D-Elr">
+                                        <rect key="frame" x="0.0" y="763" width="366" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Search"/>
+                                        <connections>
+                                            <action selector="onSearchButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1pD-gs-xvt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Edy-ll-TuK">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PsK-Hv-GzJ" secondAttribute="bottom" constant="24" id="0aV-HD-DHP"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PsK-Hv-GzJ" secondAttribute="trailing" constant="24" id="376-J3-gYS"/>
+                            <constraint firstItem="Uof-sQ-wVn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="14F-hd-d3E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Uof-sQ-wVn" secondAttribute="trailing" constant="24" id="HTD-yO-7gN"/>
                             <constraint firstItem="Edy-ll-TuK" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="IS1-JE-sLa"/>
-                            <constraint firstItem="PsK-Hv-GzJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="MY9-M9-n0P"/>
-                            <constraint firstItem="PsK-Hv-GzJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="ade-9v-Jiy"/>
+                            <constraint firstItem="Uof-sQ-wVn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="YXu-4S-37r"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Uof-sQ-wVn" secondAttribute="bottom" constant="24" id="dqp-13-sE7"/>
                             <constraint firstItem="Edy-ll-TuK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="zIk-YN-ebc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="documentsTableView" destination="PsK-Hv-GzJ" id="KS0-SQ-0Ja"/>
                         <outlet property="loadingIndicator" destination="Edy-ll-TuK" id="ZNi-Vo-fQS"/>
+                        <outlet property="searchBar" destination="lgG-nc-XcR" id="T7x-8a-fex"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

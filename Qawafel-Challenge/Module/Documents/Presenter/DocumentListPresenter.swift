@@ -48,7 +48,7 @@ class DocumentListPresenter: DocumentListPresenterContract{
             view?.showErrorMessage(message: DocumentListFetchError.SERVER_ERROR.localizedDescription)
             return
         }
-        cells = docs.map{ DocumentCellViewModel(title: $0.title ?? "", author: $0.authorName?[0] ?? "") }
+        cells = docs.map{ DocumentCellViewModel(title: $0.title ?? "", author: $0.author_name?[0] ?? "") }
         view?.refreshList()
     }
     

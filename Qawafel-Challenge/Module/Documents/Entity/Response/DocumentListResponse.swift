@@ -33,7 +33,7 @@ struct Doc: Codable {
     let iaCollectionS, lendingEditionS, lendingIdentifierS, printdisabledS: String?
     let coverEditionKey: String?
     let coverI: Int?
-    let publisher, language, authorKey, authorName: [String]?
+    let publisher, language, authorKey, author_name: [String]?
     let authorAlternativeName, person, place, subject: [String]?
     let time, idAlibrisID, idAmazon, idCanadianNationalLibraryArchive: [String]?
     let idDepósitoLegal, idGoodreads, idGoogle, idLibrarything: [String]?
