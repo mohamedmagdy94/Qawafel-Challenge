@@ -9,12 +9,14 @@ import Foundation
 
 protocol DocumentListInteractorContract: AnyObject{
     func getDocuemntList(from query: String)
+    func getDocumentsFromTitle(index: Int)
+    func getDocumentsFromAuther(index: Int)
     func getDocument(from index: Int)->Result<Doc,DocumentListFetchError>
     func setPresenter(with presenter: DocumentListPresenterOutputContract)
 }
 
 class DocumentListInteractor: DocumentListInteractorContract{
-
+   
     private var reprository: DocumentListReprositoryContract
     private weak var presenter: DocumentListPresenterOutputContract?
     private var response: DocumentListResponse?
@@ -31,7 +33,7 @@ class DocumentListInteractor: DocumentListInteractorContract{
     func getDocuemntList(from query: String) {
         let queryValidationResult = validateQuery(query: query)
         if queryValidationResult{
-            reprository.getMovies(query: query,completion: handleResponse(result:))
+            reprository.getDocuments(query: query,completion: handleResponse(result:))
         }else{
             presenter?.onDocumentListFetched(with: .failure(.WRONG_QUERY))
         }
@@ -39,6 +41,22 @@ class DocumentListInteractor: DocumentListInteractorContract{
     
     private func validateQuery(query: String)->Bool{
         return !query.isEmpty
+    }
+    
+    func getDocumentsFromTitle(index: Int) {
+        guard let document = response?.docs?[index],let title = document.title else{
+            presenter?.onDocumentListFetched(with: .failure(.DOCUMENT_NOT_FOUND))
+            return
+        }
+        reprository.getDocuments(name: title, completion: handleResponse(result:))
+    }
+    
+    func getDocumentsFromAuther(index: Int) {
+        guard let document = response?.docs?[index],let author = document.author_name?[0] else{
+            presenter?.onDocumentListFetched(with: .failure(.DOCUMENT_NOT_FOUND))
+            return
+        }
+        reprository.getDocuments(author: author, completion: handleResponse(result:))
     }
     
     private func handleResponse(result: Result<DocumentListResponse,HTTPHelper.NetworkError>){

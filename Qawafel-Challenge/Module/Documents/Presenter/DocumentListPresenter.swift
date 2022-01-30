@@ -13,7 +13,9 @@ protocol DocumentListPresenterOutputContract: AnyObject{
 
 protocol DocumentListPresenterInputContract: AnyObject{
     var cells: [DocumentCellViewModel]{get}
-    func onSearchRequested(query: String)
+    func onQuerySearchRequested(query: String)
+    func onAuthorSearchRequested(authorIndex: IndexPath)
+    func onTitleSearchRequested(titleIndex: IndexPath)
     func onDocumentSelected(with index: IndexPath)
 }
 
@@ -52,9 +54,19 @@ class DocumentListPresenter: DocumentListPresenterContract{
         view?.refreshList()
     }
     
-    func onSearchRequested(query: String) {
+    func onQuerySearchRequested(query: String) {
         view?.toggleLoading(state: true)
         interactor?.getDocuemntList(from: query)
+    }
+    
+    func onAuthorSearchRequested(authorIndex: IndexPath) {
+        view?.toggleLoading(state: true)
+        interactor?.getDocumentsFromAuther(index: authorIndex.item)
+    }
+    
+    func onTitleSearchRequested(titleIndex: IndexPath) {
+        view?.toggleLoading(state: true)
+        interactor?.getDocumentsFromTitle(index: titleIndex.item)
     }
     
     func onDocumentSelected(with index: IndexPath) {

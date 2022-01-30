@@ -38,7 +38,7 @@ class DocumentListViewController: UIViewController {
     }
     
     @IBAction func onSearchButtonPressed(_ sender: Any) {
-        presenter?.onSearchRequested(query: searchBar.text ?? "")
+        presenter?.onQuerySearchRequested(query: searchBar.text ?? "")
     }
     
 }
@@ -71,6 +71,11 @@ extension DocumentListViewController: UITableViewDelegate,UITableViewDataSource{
         guard let presenter = presenter,let cell = tableView.dequeueReusableCell(withIdentifier: DocumentTableViewCell.IDENTIFIER, for: indexPath) as? DocumentTableViewCell else{ return DocumentTableViewCell() }
         let viewModel = presenter.cells[indexPath.item]
         cell.setup(with: viewModel)
+        cell.onAuthorPressed = {[weak self] in self?.presenter?.onAuthorSearchRequested(authorIndex: indexPath)
+        }
+        cell.onTitlePressed = {[weak self] in
+            self?.presenter?.onTitleSearchRequested(titleIndex: indexPath)
+        }
         return cell
     }
     

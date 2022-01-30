@@ -23,7 +23,7 @@ class QawafelPresentationTesting: XCTestCase {
         let interactor = DocumentListInteractor(reprository: reprository, presenter: nil)
         let presenter = DocumentListPresenter(interactor: interactor, router: nil, view: nil)
         interactor.setPresenter(with: presenter)
-        presenter.onSearchRequested(query: "the lord of the rings")
+        presenter.onQuerySearchRequested(query: "the lord of the rings")
         print("Cells Count : \(presenter.cells)")
         XCTAssertTrue(presenter.cells.count > 0)
     }
