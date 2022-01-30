@@ -1,5 +1,5 @@
 //
-//  MovieListResponse.swift
+//  DocumentListFetchError.swift
 //  Qawafel-Challenge
 //
 //  Created by Mohamed Eltaweel on 30/01/2022.
@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct MovieListResponse: Codable{
-    
+enum DocumentListFetchError: Error{
+    case SERVER_ERROR
 }

@@ -17,14 +17,18 @@
 		D90EA34927A6CFEE003D86D8 /* Qawafel_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA34827A6CFEE003D86D8 /* Qawafel_ChallengeTests.swift */; };
 		D90EA35327A6CFEE003D86D8 /* Qawafel_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA35227A6CFEE003D86D8 /* Qawafel_ChallengeUITests.swift */; };
 		D90EA35527A6CFEE003D86D8 /* Qawafel_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA35427A6CFEE003D86D8 /* Qawafel_ChallengeUITestsLaunchTests.swift */; };
-		D90EA36627A6D2B5003D86D8 /* MovieListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA36527A6D2B5003D86D8 /* MovieListInteractor.swift */; };
-		D90EA36927A6D304003D86D8 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA36827A6D304003D86D8 /* MovieListPresenter.swift */; };
-		D90EA36C27A6D368003D86D8 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA36B27A6D368003D86D8 /* MovieListResponse.swift */; };
-		D90EA36E27A6D373003D86D8 /* MovieListFetchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA36D27A6D373003D86D8 /* MovieListFetchError.swift */; };
-		D90EA37227A6D413003D86D8 /* MovieListReprository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA37127A6D413003D86D8 /* MovieListReprository.swift */; };
+		D90EA36627A6D2B5003D86D8 /* DocumentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA36527A6D2B5003D86D8 /* DocumentListInteractor.swift */; };
+		D90EA36927A6D304003D86D8 /* DocumentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA36827A6D304003D86D8 /* DocumentListPresenter.swift */; };
+		D90EA36C27A6D368003D86D8 /* DocumentListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA36B27A6D368003D86D8 /* DocumentListResponse.swift */; };
+		D90EA36E27A6D373003D86D8 /* DocumentListFetchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA36D27A6D373003D86D8 /* DocumentListFetchError.swift */; };
+		D90EA37227A6D413003D86D8 /* DocumentListReprository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA37127A6D413003D86D8 /* DocumentListReprository.swift */; };
 		D90EA37827A6D4A0003D86D8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA37527A6D4A0003D86D8 /* NetworkManager.swift */; };
 		D90EA37927A6D4A0003D86D8 /* HTTPHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA37627A6D4A0003D86D8 /* HTTPHelpers.swift */; };
 		D90EA37A27A6D4A0003D86D8 /* NetworkRoutering.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA37727A6D4A0003D86D8 /* NetworkRoutering.swift */; };
+		D90EA38027A6DE42003D86D8 /* DocumentListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA37F27A6DE42003D86D8 /* DocumentListRequest.swift */; };
+		D90EA38327A6E04D003D86D8 /* DocumentListNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA38227A6E04D003D86D8 /* DocumentListNetworkRouter.swift */; };
+		D90EA38627A6E0FC003D86D8 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA38527A6E0FC003D86D8 /* APIConstant.swift */; };
+		D90EA38927A6E2AE003D86D8 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA38827A6E2AE003D86D8 /* Codable+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +63,18 @@
 		D90EA34E27A6CFEE003D86D8 /* Qawafel-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qawafel-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90EA35227A6CFEE003D86D8 /* Qawafel_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qawafel_ChallengeUITests.swift; sourceTree = "<group>"; };
 		D90EA35427A6CFEE003D86D8 /* Qawafel_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qawafel_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D90EA36527A6D2B5003D86D8 /* MovieListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListInteractor.swift; sourceTree = "<group>"; };
-		D90EA36827A6D304003D86D8 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
-		D90EA36B27A6D368003D86D8 /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
-		D90EA36D27A6D373003D86D8 /* MovieListFetchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListFetchError.swift; sourceTree = "<group>"; };
-		D90EA37127A6D413003D86D8 /* MovieListReprository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListReprository.swift; sourceTree = "<group>"; };
+		D90EA36527A6D2B5003D86D8 /* DocumentListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListInteractor.swift; sourceTree = "<group>"; };
+		D90EA36827A6D304003D86D8 /* DocumentListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListPresenter.swift; sourceTree = "<group>"; };
+		D90EA36B27A6D368003D86D8 /* DocumentListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListResponse.swift; sourceTree = "<group>"; };
+		D90EA36D27A6D373003D86D8 /* DocumentListFetchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListFetchError.swift; sourceTree = "<group>"; };
+		D90EA37127A6D413003D86D8 /* DocumentListReprository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListReprository.swift; sourceTree = "<group>"; };
 		D90EA37527A6D4A0003D86D8 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D90EA37627A6D4A0003D86D8 /* HTTPHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelpers.swift; sourceTree = "<group>"; };
 		D90EA37727A6D4A0003D86D8 /* NetworkRoutering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRoutering.swift; sourceTree = "<group>"; };
+		D90EA37F27A6DE42003D86D8 /* DocumentListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListRequest.swift; sourceTree = "<group>"; };
+		D90EA38227A6E04D003D86D8 /* DocumentListNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListNetworkRouter.swift; sourceTree = "<group>"; };
+		D90EA38527A6E0FC003D86D8 /* APIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		D90EA38827A6E2AE003D86D8 /* Codable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +159,8 @@
 		D90EA36227A6D256003D86D8 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				D90EA37327A6D4A0003D86D8 /* Utilities */,
+				D90EA38427A6E0B3003D86D8 /* Constants */,
+				D90EA37327A6D4A0003D86D8 /* Core */,
 				D90EA32E27A6CFEB003D86D8 /* AppDelegate.swift */,
 				D90EA33027A6CFEB003D86D8 /* SceneDelegate.swift */,
 				D90EA33227A6CFEB003D86D8 /* ViewController.swift */,
@@ -177,7 +186,7 @@
 		D90EA36427A6D279003D86D8 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				D90EA36527A6D2B5003D86D8 /* MovieListInteractor.swift */,
+				D90EA36527A6D2B5003D86D8 /* DocumentListInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -185,7 +194,7 @@
 		D90EA36727A6D2F5003D86D8 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				D90EA36827A6D304003D86D8 /* MovieListPresenter.swift */,
+				D90EA36827A6D304003D86D8 /* DocumentListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -193,9 +202,11 @@
 		D90EA36A27A6D339003D86D8 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				D90EA38127A6DF01003D86D8 /* Router */,
+				D90EA37E27A6DE30003D86D8 /* Request */,
+				D90EA37D27A6DE24003D86D8 /* Error */,
+				D90EA37C27A6DCBD003D86D8 /* Response */,
 				D90EA37027A6D402003D86D8 /* Reprository */,
-				D90EA36B27A6D368003D86D8 /* MovieListResponse.swift */,
-				D90EA36D27A6D373003D86D8 /* MovieListFetchError.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -203,17 +214,18 @@
 		D90EA37027A6D402003D86D8 /* Reprository */ = {
 			isa = PBXGroup;
 			children = (
-				D90EA37127A6D413003D86D8 /* MovieListReprository.swift */,
+				D90EA37127A6D413003D86D8 /* DocumentListReprository.swift */,
 			);
 			path = Reprository;
 			sourceTree = "<group>";
 		};
-		D90EA37327A6D4A0003D86D8 /* Utilities */ = {
+		D90EA37327A6D4A0003D86D8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D90EA38727A6E297003D86D8 /* Extension */,
 				D90EA37427A6D4A0003D86D8 /* Network */,
 			);
-			path = Utilities;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		D90EA37427A6D4A0003D86D8 /* Network */ = {
@@ -224,6 +236,54 @@
 				D90EA37727A6D4A0003D86D8 /* NetworkRoutering.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		D90EA37C27A6DCBD003D86D8 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA36B27A6D368003D86D8 /* DocumentListResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		D90EA37D27A6DE24003D86D8 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA36D27A6D373003D86D8 /* DocumentListFetchError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		D90EA37E27A6DE30003D86D8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA37F27A6DE42003D86D8 /* DocumentListRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		D90EA38127A6DF01003D86D8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA38227A6E04D003D86D8 /* DocumentListNetworkRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D90EA38427A6E0B3003D86D8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA38527A6E0FC003D86D8 /* APIConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D90EA38727A6E297003D86D8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D90EA38827A6E2AE003D86D8 /* Codable+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,17 +418,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90EA33327A6CFEB003D86D8 /* ViewController.swift in Sources */,
-				D90EA36927A6D304003D86D8 /* MovieListPresenter.swift in Sources */,
+				D90EA36927A6D304003D86D8 /* DocumentListPresenter.swift in Sources */,
 				D90EA37827A6D4A0003D86D8 /* NetworkManager.swift in Sources */,
+				D90EA38627A6E0FC003D86D8 /* APIConstant.swift in Sources */,
+				D90EA38927A6E2AE003D86D8 /* Codable+Extension.swift in Sources */,
 				D90EA33927A6CFEB003D86D8 /* Qawafel_Challenge.xcdatamodeld in Sources */,
-				D90EA37227A6D413003D86D8 /* MovieListReprository.swift in Sources */,
-				D90EA36627A6D2B5003D86D8 /* MovieListInteractor.swift in Sources */,
+				D90EA37227A6D413003D86D8 /* DocumentListReprository.swift in Sources */,
+				D90EA36627A6D2B5003D86D8 /* DocumentListInteractor.swift in Sources */,
+				D90EA38327A6E04D003D86D8 /* DocumentListNetworkRouter.swift in Sources */,
 				D90EA37A27A6D4A0003D86D8 /* NetworkRoutering.swift in Sources */,
-				D90EA36E27A6D373003D86D8 /* MovieListFetchError.swift in Sources */,
+				D90EA36E27A6D373003D86D8 /* DocumentListFetchError.swift in Sources */,
 				D90EA37927A6D4A0003D86D8 /* HTTPHelpers.swift in Sources */,
 				D90EA32F27A6CFEB003D86D8 /* AppDelegate.swift in Sources */,
 				D90EA33127A6CFEB003D86D8 /* SceneDelegate.swift in Sources */,
-				D90EA36C27A6D368003D86D8 /* MovieListResponse.swift in Sources */,
+				D90EA36C27A6D368003D86D8 /* DocumentListResponse.swift in Sources */,
+				D90EA38027A6DE42003D86D8 /* DocumentListRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
