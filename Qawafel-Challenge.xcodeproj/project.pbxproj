@@ -43,6 +43,7 @@
 		D90EA3AC27A72BDE003D86D8 /* DocumentListMockReprository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA3AB27A72BDE003D86D8 /* DocumentListMockReprository.swift */; };
 		D90EA3B227A72FE0003D86D8 /* QawafelPresentationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA3B127A72FE0003D86D8 /* QawafelPresentationTesting.swift */; };
 		D90EA3B327A73132003D86D8 /* MockDocumentListResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D90EA3AA27A72BB7003D86D8 /* MockDocumentListResponse.json */; };
+		D90EA3BB27A737F1003D86D8 /* DocumentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EA3BA27A737F1003D86D8 /* DocumentDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		D90EA3AA27A72BB7003D86D8 /* MockDocumentListResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockDocumentListResponse.json; sourceTree = "<group>"; };
 		D90EA3AB27A72BDE003D86D8 /* DocumentListMockReprository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListMockReprository.swift; sourceTree = "<group>"; };
 		D90EA3B127A72FE0003D86D8 /* QawafelPresentationTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QawafelPresentationTesting.swift; sourceTree = "<group>"; };
+		D90EA3BA27A737F1003D86D8 /* DocumentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +366,7 @@
 			children = (
 				D90EA38E27A6F97D003D86D8 /* DocumentListViewController.swift */,
 				D90EA39C27A70967003D86D8 /* DocumentTableViewCell.swift */,
+				D90EA3BA27A737F1003D86D8 /* DocumentDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				D90EA3A327A71FEE003D86D8 /* ViewControllerID.swift in Sources */,
 				D90EA38C27A6F879003D86D8 /* DocumentListRouter.swift in Sources */,
 				D90EA36927A6D304003D86D8 /* DocumentListPresenter.swift in Sources */,
+				D90EA3BB27A737F1003D86D8 /* DocumentDetailsViewController.swift in Sources */,
 				D90EA37827A6D4A0003D86D8 /* NetworkManager.swift in Sources */,
 				D90EA38627A6E0FC003D86D8 /* APIConstant.swift in Sources */,
 				D90EA38927A6E2AE003D86D8 /* Codable+Extension.swift in Sources */,

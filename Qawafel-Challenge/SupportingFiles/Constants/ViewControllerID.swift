@@ -9,4 +9,5 @@ import Foundation
 
 enum ViewControllerID: String{
     case DocumentListViewController
+    case DocumentDetailsViewController
 }

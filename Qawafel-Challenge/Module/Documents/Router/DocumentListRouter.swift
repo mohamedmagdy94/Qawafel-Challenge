@@ -21,7 +21,8 @@ struct DocumentListRouter: DocumentListRouterContract{
     }
     
     func showDocumentDetails(from document: Doc) {
-        
+        let nextView = DocumentDetailsViewController.create(with: document)
+        viewController?.navigationController?.pushViewController(nextView, animated: true)
     }
     
     static func createModule()->UIViewController{
